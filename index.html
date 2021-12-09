@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Sharing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d30f0f34ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="flex-div">
+        <div class="navleft flex-div">
+            <img src="images/menu.png" alt="yp" class="menu-icon">
+            <img src="images/logo.png" alt="yp" class="logo">
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search" id="searchtxt">
+                <img src="images/search.png" alt="yp">
+            </div>
+            <img src="images/voice-search.png" alt="yp" class="mic-icon">
+        </div>
+        <div class="nav-right flex-div">
+            <img src="images/upload.png" alt="yp">
+            <img src="images/more.png" alt="yp">
+            <img src="images/notification.png" alt="yp">
+            <img src="images/yash.jpg" alt="yp" class="user-icon"  onclick="settingsMenuToggle()">
+        </div>
+
+        <!--                 Setting Menu              -->
+        <div class="settings-menu">
+
+            <!-- <div id="dark-btn">
+                <span></span>
+            </div> -->
+ 
+           <div class="settings-menu-inner">
+             <div class="user-profile">
+                 <img src="images/yash.jpg" alt="yp">
+                 <div>
+                     <p>Yash Pokharna</p>
+                    <a href="#">ManaGe Your Google Accounts</a>
+                 </div>
+             </div>
+             <hr>
+             <!-- <div class="user-profile">
+                
+                 <div>
+                     <p><i class="fas fa-user"></i>Your Channel</p>
+                    
+                 </div>
+             </div>
+             
+             <div class="user-profile">
+                
+                
+                 <div>
+                     <p><i class="fas fa-dollar-sign"></i>Purchase and Membership</p>
+                   
+                 </div>
+             </div> -->
+             
+             <div class="setting-links">
+                <img src="images/switch.png" alt="yp" class="settings-icon">
+                <a href="channel.html">Your Channel <img src="img/arrow.png" width="10px" alt=""></a>
+            </div>
+            <div class="setting-links">
+                <img src="images/dollar.png" alt="yp" class="settings-icon">
+                <a href="#">Purchase and Membersgip<img src="img/arrow.png" width="10px" alt=""></a>
+            </div> 
+             <div class="setting-links">
+                 <img src="images/yt.png" alt="yp" class="settings-icon">
+                 <a href="#">YouTube Studio <img src="img/arrow.png" width="10px" alt=""></a>
+             </div>
+             <div class="setting-links">
+                <img src="images/switch.png" alt="yp" class="settings-icon">
+                <a href="#">Switch Account<img src="images/arrow.png" width="10px" alt=""></a>
+            </div>
+             <div class="setting-links">
+                 <img src="images/logout.png" alt="yp" class="settings-icon">
+                 <a href="#"> Sign Out <img src="images/arrow.png" width="10px" alt=""></a>
+             </div>
+             <hr>
+             <div class="setting-links">
+                 <!-- <img src="img/logout.png" alt="yp" class="settings-icon"> -->
+                 <a href="#"><i class="fas fa-moon"></i>Appearence : Device Theme <img src="images/arrow.png" width="10px" alt=""></a>
+             </div>
+             <div class="setting-links">
+                <img src="images/language.png" alt="yp" class="settings-icon">
+                <a href="#">Language : English <img src="images/arrow.png" width="10px" alt=""></a>
+            </div>
+            <div class="setting-links">
+                <img src="images/loc.png" alt="yp" class="settings-icon">
+                <a href="#">Location : India <img src="images/arrow.png" width="10px" alt=""></a>
+            </div>
+            <div class="setting-links">
+                <img src="images/setting.png" alt="yp" class="settings-icon">
+                <a href="#">Settings <img src="img/arrow.png" width="10px" alt=""></a>
+            </div>
+            
+            
+ 
+           </div>
+         
+       </div>
+    </nav>
+
+    <!-- ----------------------------Side Bar---------------------------- -->
+    <div class="sidebar">
+           <div class="shortcut-links">
+               <a href=""><img src="images/home.png" alt="yp"><p>Home</p></a>
+               <a href="explore.html"><img src="images/explore.png" alt="yp"><p>Explore</p></a>
+               <a href="subscription.html"><img src="images/subscriprion.png" alt="yp"><p>Subscription</p></a>
+               <a href="library.html"><img src="images/library.png" alt="yp"><p>Library</p></a>
+               <a href=""><img src="images/history.png" alt="yp"><p>History</p></a>
+               <a href=""><img src="images/playlist.png" alt="yp"><p>Playlist</p></a>
+               <a href=""><img src="images/messages.png" alt="yp"><p>Messages</p></a>
+               <a href=""><img src="images/show-more.png" alt="yp"><p>Show More</p></a>
+               <hr>
+           </div>
+
+           <div class="subscribed-list">
+               <h3>SUBSCRIBED</h3>
+              
+               <a href=""><img src="images/yash.jpg" alt="yp"><p>Yash Pokharna</p></a>
+               <a href=""><img src="images/simon.png" alt="yp"><p>Virat Kohli</p></a>
+               <a href=""><img src="images/tom.png" alt="yp"><p>Rishab Pant</p></a>
+               <a href=""><img src="images/megan.png" alt="yp"><p>Alia Bhat</p></a>
+               <a href=""><img src="images/cameron.png" alt="yp"><p>Shraddha Kapoor</p></a>
+              
+           </div>
+    </div>
+
+
+    <!-- ----------------Main------------ -->
+
+    <div class="container">
+        <div class="banner">
+            <img src="images/banner3.jpg" alt="yp">
+        </div>
+
+        <div class="list-container">
+            <div class="vid-list">
+                <a href="video.html"><img src="images/thumbnail1.png" alt="yp" class="thumbnail"></a>
+                
+                <div class="flex-div">
+                    <img src="images/Jack.png" alt="yp">
+                    <div class="vid-info">
+                        <a href="">Best Channel to Learn coding that help you to be Web Developer</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views &bull; 2 days</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="vid-list">
+                <a href="video2.html"><img src="images/thumbnail2.png" alt="yp" class="thumbnail"></a>
+                
+                <div class="flex-div">
+                    <img src="images/Jack.png" alt="yp">
+                    <div class="vid-info">
+                        <a href="">A trip to usa using cycle and flag</a>
+                        <p>Jack Kumar</p>
+                        <p>15k Views &bull; 2 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="video3.html"><img src="images/jumanji.jpg" alt="yp" class="thumbnail"></a>
+                
+                <div class="flex-div">
+                    <img src="images/Jack.png" alt="yp">
+                    <div class="vid-info">
+                        <a href="">Jumanji - The next level </a>
+                        <p>Dharma Production</p>
+                        <p>155k Views &bull; 28 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="video4.html"><img src="images/classmate.jpg" alt="yp" class="thumbnail"></a>
+                
+                <div class="flex-div">
+                    <img src="images/Jack.png" alt="yp">
+                    <div class="vid-info">
+                        <a href="">Classmate marathi movie (Swapnil Joshi, Sonali Bendre)</a>
+                        <p>Easy Tutorials</p>
+                        <p>355k Views &bull; 2 Months ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="video5.html"><img src="images/pati.jpg" alt="yp" class="thumbnail"></a>
+                
+                <div class="flex-div">
+                    <img src="images/Jack.png" alt="yp">
+                    <div class="vid-info">
+                        <a href="">Pati Patni aur Woh</a>
+                        <p>S S Rajmouli</p>
+                        <p>200k Views &bull; 20 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="video6.html"><img src="images/special.jpg" alt="yp" class="thumbnail"></a>
+                
+                <div class="flex-div">
+                    <img src="images/Jack.png" alt="yp">
+                    <div class="vid-info">
+                        <a href="">Special Ops - Season 1</a>
+                        <p>Chotstar</p>
+                        <p>200k Views &bull; 2 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="video7.html"><img src="images/satelite.jpg" alt="yp" class="thumbnail"></a>
+                
+                <div class="flex-div">
+                    <img src="images/Jack.png" alt="yp">
+                    <div class="vid-info">
+                        <a href="">Satellite Shankar</a>
+                        <p>Satellite </p>
+                        <p>155k Views &bull; 1 day</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="video8.html"><img src="images/shub.jpg" alt="yp" class="thumbnail"></a>
+                
+                <div class="flex-div">
+                    <img src="images/Jack.png" alt="yp">
+                    <div class="vid-info">
+                        <a href="">Shub Mangal Savdhaan</a>
+                        <p>Tvf</p>
+                        <p>155k Views &bull; 2 days</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+<script src="index.js"></script>
+</body>
+
+</html>
